@@ -1,0 +1,19 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+version = '1.0.1'
+group = 'com.realistic_bullets'
+base { archivesName = 'realistic_bullets' }
+
+java { toolchain.languageVersion = JavaLanguageVersion.of(21) }
+
+neoForge {
+    version = project.neo_version
+    runs {
+        client { client() }
+        server { server() }
+    }
+    mods { realistic_bullets { sourceSet sourceSets.main } }
+}

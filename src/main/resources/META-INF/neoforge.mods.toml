@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="realistic_bullets"
+version="1.0.1"
+displayName="Realistic Bullets"
+authors="Prosto_chelovechic_(Modrinth)"
+description=''''Voxel damage to blocks from TACZ bullets''''
+
+[[dependencies.realistic_bullets]]
+    modId="neoforge"
+    mandatory=true
+    versionRange="[21.1.0,)"
+    side="BOTH"
+
+[[dependencies.realistic_bullets]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.1,1.22)"
+    side="BOTH"
+
+[[dependencies.realistic_bullets]]
+    modId="tacz"
+    mandatory=false
+    ordering="AFTER"
+    side="BOTH"
